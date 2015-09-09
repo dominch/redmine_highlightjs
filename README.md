@@ -4,6 +4,12 @@ A redmine plugin to highlight code blocks much better than coderay! :)
 135 languages with autodetection feature, 65 color themes, multi language code highlight (like http+json) 
 Try Your language and choose best theme for You: https://highlightjs.org/static/demo/
 
+Old good coderay: 
+![]({{site.baseurl}}/screenshots/coderay.png)
+
+Example highlihts (monokai_sublime theme) - json, http+json:
+![]({{site.baseurl}}/screenshots/highlightjs.png)
+
 It's very easy to use because it works automatically :) finds blocks of code, detects a language (one or more!), highlights it.
 
 Supported languages and markups in build: 1c accesslog actionscript apache applescript armasm asciidoc aspectj autohotkey autoit avrasm axapta bash brainfuck cal capnproto ceylon clojure clojure-repl cmake coffeescript cpp crystal cs css d markdown dart delphi diff django dns dockerfile dos dust elixir elm ruby erb erlang-repl erlang fix fortran fsharp gams gcode gherkin glsl go golo gradle groovy haml handlebars haskell haxe http inform7 ini irpf90 java javascript json julia kotlin lasso less lisp livecodeserver livescript lua makefile mathematica matlab mel mercury mizar perl mojolicious monkey nginx nimrod nix nsis objectivec ocaml openscad oxygene parser3 pf php powershell processing profile prolog protobuf puppet python q r rib roboconf rsl ruleslanguage rust scala scheme scilab scss smali smalltalk sml sql stata step21 stylus swift tcl tex thrift tp twig typescript vala vbnet vbscript vbscript-html verilog vhdl vim x86asm xml xl xquery zephir
@@ -21,73 +27,62 @@ Supported languages and markups in build: 1c accesslog actionscript apache apple
 This plugin will replace existing Coderay highlights, 
 You can specify target language like usual: 
 
-<pre><code class="json">
-<pre><code class="json">
-[
-  {
-    "title": "apples",
-    "count": [12000, 20000],
-    "description": {"text": "...", "sensitive": false}
-  },
-  {
-    "title": "oranges",
-    "count": [17500, null],
-    "description": {"text": "...", "sensitive": false}
-  }
-]
-</code></pre>
-</code></pre>
+	<pre><code class="json">
+	[
+  		{
+    		"title": "apples",
+    		"count": [12000, 20000],
+    		"description": {"text": "...", "sensitive": false}
+  		},
+  		{
+    		"title": "oranges",
+    		"count": [17500, null],
+    		"description": {"text": "...", "sensitive": false}
+  		}
+	]
+	</code></pre>
 
 or use autodetection: 
 
-<pre><code>
-<pre><code>
-[
-  {
-    "title": "apples",
-    "count": [12000, 20000],
-    "description": {"text": "...", "sensitive": false}
-  },
-  {
-    "title": "oranges",
-    "count": [17500, null],
-    "description": {"text": "...", "sensitive": false}
-  }
-]
-</code></pre>
-</code></pre>
+	<pre><code>
+	[
+	  {
+	    "title": "apples",
+    	"count": [12000, 20000],
+    	"description": {"text": "...", "sensitive": false}
+	  },
+	  {
+	    "title": "oranges",
+	    "count": [17500, null],
+	    "description": {"text": "...", "sensitive": false}
+	  }
+	]
+	</code></pre>
 
 Autodetection works great with more than one language on the board, like http with appliction/json body: 
 
-<pre><code>
-<pre><code>
-POST /task?id=1 HTTP/1.1
-Host: example.org
-Content-Type: application/json; charset=utf-8
-Content-Length: 19
-
-{"status": "ok", "extended": true}
-</code></pre>
-</code></pre>
-
+	<pre><code>
+	POST /task?id=1 HTTP/1.1
+	Host: example.org
+	Content-Type: application/json; charset=utf-8
+	Content-Length: 19
+	
+	{"status": "ok", "extended": true}
+	</code></pre>
 
 To disable highlighting altogether use the nohighlight class:
 
-<pre><code class="nohighlight">...</code></pre>
+	<pre><code class="nohighlight">...</code></pre>
 
 Plugin additionaly trims white lines from start and end so  
 
-<pre><code>
-<pre><code>{"status": "ok", "extended": true}</code></pre>
-</code></pre>
+	<pre><code>{"status": "ok", "extended": true}</code></pre>
 
 is equal to: 
 
-<pre><code>
-<pre><code>
-{"status": "ok", "extended": true}
-</code></pre>
-</code></pre>
+	<pre><code>
+	{"status": "ok", "extended": true}
+	</code></pre>
 
 # Build Your own HighlightJS version
 
