@@ -107,6 +107,6 @@ No, that probably never happens! http://highlightjs.readthedocs.org/en/latest/li
 
 This plugin is licensed under the GNU GPL v2.  See <tt>COPYRIGHT.txt</tt> and <tt>GPL.txt</tt> for details.
 
-== Project help
+# Project help, bugs
 
 If you need help you can contact the maintainers on the project page on GitHub (https://github.com/dominch/redmine_highlightjs). If you want to report bugs, please open a new issue here: https://github.com/dominch/redmine_highlightjs/issues
