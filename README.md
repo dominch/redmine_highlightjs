@@ -5,10 +5,10 @@ A redmine plugin to highlight code blocks much better than coderay! :)
 Try Your language and choose best theme for You: https://highlightjs.org/static/demo/
 
 Old good coderay: 
-![]({{site.baseurl}}/screenshots/coderay.png)
+![](https://raw.githubusercontent.com/dominch/redmine_highlightjs/master/screenshots/coderay.png)
 
 Example highlihts (monokai_sublime theme) - json, http+json:
-![]({{site.baseurl}}/screenshots/highlightjs.png)
+![](https://raw.githubusercontent.com/dominch/redmine_highlightjs/master/screenshots/highlightjs.png)
 
 It's very easy to use because it works automatically :) finds blocks of code, detects a language (one or more!), highlights it.
 
@@ -27,62 +27,62 @@ Supported languages and markups in build: 1c accesslog actionscript apache apple
 This plugin will replace existing Coderay highlights, 
 You can specify target language like usual: 
 
-	<pre><code class="json">
-	[
-  		{
-    		"title": "apples",
-    		"count": [12000, 20000],
-    		"description": {"text": "...", "sensitive": false}
-  		},
-  		{
-    		"title": "oranges",
-    		"count": [17500, null],
-    		"description": {"text": "...", "sensitive": false}
-  		}
-	]
-	</code></pre>
+    <pre><code class="json">
+    [
+          {
+            "title": "apples",
+            "count": [12000, 20000],
+            "description": {"text": "...", "sensitive": false}
+          },
+          {
+            "title": "oranges",
+            "count": [17500, null],
+            "description": {"text": "...", "sensitive": false}
+          }
+    ]
+    </code></pre>
 
 or use autodetection: 
 
-	<pre><code>
-	[
-	  {
-	    "title": "apples",
-    	"count": [12000, 20000],
-    	"description": {"text": "...", "sensitive": false}
-	  },
-	  {
-	    "title": "oranges",
-	    "count": [17500, null],
-	    "description": {"text": "...", "sensitive": false}
-	  }
-	]
-	</code></pre>
+    <pre><code>
+    [
+      {
+        "title": "apples",
+        "count": [12000, 20000],
+        "description": {"text": "...", "sensitive": false}
+      },
+      {
+        "title": "oranges",
+        "count": [17500, null],
+        "description": {"text": "...", "sensitive": false}
+      }
+    ]
+    </code></pre>
 
 Autodetection works great with more than one language on the board, like http with appliction/json body: 
 
-	<pre><code>
-	POST /task?id=1 HTTP/1.1
-	Host: example.org
-	Content-Type: application/json; charset=utf-8
-	Content-Length: 19
-	
-	{"status": "ok", "extended": true}
-	</code></pre>
+    <pre><code>
+    POST /task?id=1 HTTP/1.1
+    Host: example.org
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 19
+    
+    {"status": "ok", "extended": true}
+    </code></pre>
 
 To disable highlighting altogether use the nohighlight class:
 
-	<pre><code class="nohighlight">...</code></pre>
+    <pre><code class="nohighlight">...</code></pre>
 
 Plugin additionaly trims white lines from start and end so  
 
-	<pre><code>{"status": "ok", "extended": true}</code></pre>
+    <pre><code>{"status": "ok", "extended": true}</code></pre>
 
 is equal to: 
 
-	<pre><code>
-	{"status": "ok", "extended": true}
-	</code></pre>
+    <pre><code>
+    {"status": "ok", "extended": true}
+    </code></pre>
 
 # Build Your own HighlightJS version
 
@@ -99,7 +99,7 @@ No, that probably never happens! http://highlightjs.readthedocs.org/en/latest/li
 
 # License
 
-This plugin is licensed under the GNU GPL v2.  See [[COPYRIGHT.txt]](COPYRIGHT.txt) and [GPL.txt](GPL.txt) for details.
+This plugin is licensed under the GNU GPL v2.  See [COPYRIGHT.txt](COPYRIGHT.txt) and [GPL.txt](GPL.txt) for details.
 
 # Plugin author
 
