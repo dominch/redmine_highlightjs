@@ -97,11 +97,14 @@ For Your new language definition follow instructions here: http://highlightjs.re
 
 No, that probably never happens! http://highlightjs.readthedocs.org/en/latest/line-numbers.html
 
-
 # License
 
-This plugin is licensed under the GNU GPL v2.  See <tt>COPYRIGHT.txt</tt> and <tt>GPL.txt</tt> for details.
+This plugin is licensed under the GNU GPL v2.  See [[COPYRIGHT.txt]](COPYRIGHT.txt) and [GPL.txt](GPL.txt) for details.
+
+# Plugin author
+
+(c) Dominik Chmaj - [http://www.dominik.net.pl](http://www.dominik.net.pl)
 
 # Project help, bugs
 
-If you need help you can contact the maintainers on the project page on GitHub (https://github.com/dominch/redmine_highlightjs). If you want to report bugs, please open a new issue here: https://github.com/dominch/redmine_highlightjs/issues
+If you need help you can contact the maintainers on the project page on GitHub ([https://github.com/dominch/redmine_highlightjs](https://github.com/dominch/redmine_highlightjs)). If you want to report bugs, please open a new issue here: [https://github.com/dominch/redmine_highlightjs/issues](https://github.com/dominch/redmine_highlightjs/issues)
