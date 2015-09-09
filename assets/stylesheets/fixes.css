@@ -42,3 +42,8 @@ table#highlightSettings tbody tr th label {
 table#highlightSettings span.helpLink {
     margin-left: 20px; 
 }
+
+pre code.nohighlight  {
+    padding: 10px !important; 
+    display: block !important; 
+}
