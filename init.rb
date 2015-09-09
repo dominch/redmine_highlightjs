@@ -5,6 +5,8 @@ require_dependency 'hooks/view_highlighted_hook'
 Redmine::Plugin.register :redmine_highlightjs do
   name 'Syntax highlighting with highlightjs'
   author 'dominik chmaj'
+  url 'https://github.com/dominch/redmine_highlightjs'
+  author_url 'http://dominik.net.pl/'
   description 'Adds much better syntax highlighting with autodetection'
   version '0.1.0'
   settings :default => {'theme' => 'monokai_sublime'}, :partial => 'settings/highlightjs_settings'
