@@ -1,6 +1,5 @@
-Redmine Did You Mean? is a Redmine plugin to enter multiple time 
-entries in bulk.
-Copyright (C) 2012 Alessandro Bahgat and Mattia Tommasone
+Redmine HighlightJS? is a Redmine plugin to highlight using highlightJS lib
+Copyright (C) 2015 Dominik Chmaj
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
