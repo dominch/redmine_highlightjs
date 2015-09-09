@@ -1,0 +1,6 @@
+# Polish strings go here for Rails i18n
+pl:
+  supported_languages: Definicje wspierane w tej wersji biblioteki
+  highlighting_theme: Schemat kolorów
+  try_it_link: "Wybierz korzystając z demo online:"
+  
