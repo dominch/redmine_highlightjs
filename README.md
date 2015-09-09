@@ -5,9 +5,11 @@ A redmine plugin to highlight code blocks much better than coderay! :)
 Try Your language and choose best theme for You: https://highlightjs.org/static/demo/
 
 Old good coderay: 
+
 ![](https://raw.githubusercontent.com/dominch/redmine_highlightjs/master/screenshots/coderay.png)
 
 Example highlihts (monokai_sublime theme) - json, http+json:
+
 ![](https://raw.githubusercontent.com/dominch/redmine_highlightjs/master/screenshots/highlightjs.png)
 
 It's very easy to use because it works automatically :) finds blocks of code, detects a language (one or more!), highlights it.
