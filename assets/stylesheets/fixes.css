@@ -1,8 +1,40 @@
+span.lineNumber { 
+    float: left; 
+    clear: left; 
+    padding-right: 10px; 
+    color: #fff !important; 
+    display: block; 
+    width: 3em; 
+    text-align: right; 
+}
+
+div.highlightLoader {
+    min-height: 100px; 
+    background: url(images/ajaxLoader.gif) no-repeat center center; 
+    padding: 0 !important; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+table.syntaxhl {
+    display: none; 
+}
+
 pre {
     padding: 0 !important; 
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    display: none; 
+}
+
+pre.rounded {
+    padding: 0 !important; 
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    border-radius: 8px !important;
+    overflow: hidden; 
     display: none; 
 }
 
