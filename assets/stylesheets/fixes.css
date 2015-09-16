@@ -79,3 +79,7 @@ pre code.nohighlight  {
     padding: 10px !important; 
     display: block !important; 
 }
+
+fieldset.hidden {
+    display: none !important; 
+}

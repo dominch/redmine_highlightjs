@@ -3,3 +3,7 @@ en:
   supported_languages: Language Markups supported in this build 
   highlighting_theme: Highlight using theme
   try_it_link: "Try theme with online demo:"
+  code_theme: Highlight Code Theme
+  code_theme_title: Podświetlenie bloków kodu
+  allow_redefine: Allow to redefine by user
+  
