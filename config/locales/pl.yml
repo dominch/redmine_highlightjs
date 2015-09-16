@@ -3,4 +3,7 @@ pl:
   supported_languages: Definicje wspierane w tej wersji biblioteki
   highlighting_theme: Schemat kolorów
   try_it_link: "Wybierz korzystając z demo online:"
-  
+  code_theme: Schemat podświetlania
+  code_theme_title: Podświetlenie bloków kodu
+  allow_redefine: Pozwalaj zmieniać użytkownikom
+

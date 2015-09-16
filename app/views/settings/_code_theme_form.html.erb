@@ -1,0 +1,19 @@
+<fieldset class="box <%= 'hidden' if Setting.plugin_redmine_highlightjs[:allow_redefine].nil? %>">
+
+<legend><%=h l(:code_theme_title) %></legend>
+<div class="tabular">
+    <p>
+        <label><%=h l(:code_theme) %></label>
+        <%=select_tag("pref[code_theme]", options_for_select(
+            {
+                l(:label_default) => CodeThemeUserSetting::DEFAULT_CODE_THEME
+            }.merge(CodeThemeUserSetting::CODE_THEMES),
+            user.preference.code_theme)) 
+        %>
+    </p>
+    <p>
+        <em><span class="helpLink"> <%= l(:try_it_link) %> <a href="https://highlightjs.org/static/demo/" target="_blank">https://highlightjs.org/static/demo/</a> </span></em>
+    </p>
+</div>
+
+</fieldset>
