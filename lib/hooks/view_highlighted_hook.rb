@@ -8,7 +8,11 @@ module Highlightjs
         
         if SupportedBrowsers.detect { |browser| user_agent >= browser }
           Rails.logger.info "redmine_highlightjs2: supported browser: #{user_agent}"
-          Redmine::SyntaxHighlighting.highlighter = 'Highlightjs'
+          begin
+            Redmine::SyntaxHighlighting.highlighter = 'HighlightJsSyntaxHighlighting'
+          rescue
+            Rails.logger.info "redmine_highlightjs2: cannot turn off CodeRay"
+          end
           setting = User.current.preference.code_theme if !Setting.plugin_redmine_highlightjs[:allow_redefine].nil?
           setting = Setting.plugin_redmine_highlightjs[:theme] if setting.nil? || setting.empty? || setting == CodeThemeUserSetting::DEFAULT_CODE_THEME
           setting = 'monokai_sublime' if setting.nil? || setting.empty?

@@ -18,7 +18,6 @@ end
 
 ActionDispatch::Callbacks.to_prepare do
   require_dependency 'highlightjs_highlighting'
-  Redmine::SyntaxHighlighting.highlighter = 'Highlightjs'
 end
 
 Rails.configuration.to_prepare do
