@@ -24,6 +24,17 @@ Supported languages and markups in build: 1c accesslog actionscript apache apple
 1. Restart the server (this will ensure that the CSS file and other assets are copied to the right place)
 1. (optional) Configure color theme in Administration -> Plugins -> HighlightJS
 
+# Browser Restrictions
+
+Plugin is restricted to work with following browsers (or newer): 
+
+      Browser.new('Safari', '2'),
+      Browser.new('Firefox', '3'),
+      Browser.new('Chrome', '10'),
+      Browser.new('Internet Explorer', '9')
+
+If You find out that there are some problems with Your browser then report bug in github, so we can turn it off for selected software. Some people still using old browsers like IE8, when others are up to date. IE8 is unsupported by main lib so there is nothing better than turning on coderay again. 
+
 # Usage
 
 This plugin will replace existing Coderay highlights, 
@@ -98,6 +109,9 @@ For Your new language definition follow instructions here: http://highlightjs.re
 ### Line numbers? 
 
 No, that probably never happens! http://highlightjs.readthedocs.org/en/latest/line-numbers.html
+
+This plugin removes line numbers from file-view too in order to get one block to highlight. 
+
 
 # License
 
