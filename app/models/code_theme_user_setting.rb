@@ -1,4 +1,3 @@
-
 class CodeThemeUserSetting < ActiveRecord::Base
   unloadable
   belongs_to :user
@@ -73,9 +72,13 @@ class CodeThemeUserSetting < ActiveRecord::Base
     'xcode' => 'xcode',
     'zenburn' => 'zenburn'
   }
-  
+
   def self.find_code_theme_by_user_id(user_id)
-    CodeThemeUserSetting.find(:first, :conditions => ['user_id = ?', user_id])
+    begin
+      CodeThemeUserSetting.find(:first, :conditions => ['user_id = ?', user_id])
+    rescue ActiveRecord::RecordNotFound
+      CodeThemeUserSetting.where(user_id: user_id).take
+    end
   end
 
   def self.find_or_create_code_theme_by_user_id(user_id)
