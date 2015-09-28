@@ -13,7 +13,7 @@ module Highlightjs
           rescue
             Rails.logger.info "redmine_highlightjs2: cannot turn off CodeRay"
           end
-          setting = User.current.preference.code_theme if !Setting.plugin_redmine_highlightjs[:allow_redefine].nil?
+          setting = User.current.preference.code_theme if User.current.logged? && !Setting.plugin_redmine_highlightjs[:allow_redefine].nil?
           setting = Setting.plugin_redmine_highlightjs[:theme] if setting.nil? || setting.empty? || setting == CodeThemeUserSetting::DEFAULT_CODE_THEME
           setting = 'monokai_sublime' if setting.nil? || setting.empty?
           return stylesheet_link_tag("themes/#{setting}.css", :plugin => "redmine_highlightjs", :media => "screen") +
