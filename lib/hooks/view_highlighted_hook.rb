@@ -5,7 +5,7 @@ module Highlightjs
 
         request = context[:request].env['HTTP_USER_AGENT']
         user_agent = UserAgent.parse(request)
-        
+
         if SupportedBrowsers.detect { |browser| user_agent >= browser }
           Rails.logger.info "redmine_highlightjs2: supported browser: #{user_agent}"
           begin
@@ -13,7 +13,8 @@ module Highlightjs
           rescue
             Rails.logger.info "redmine_highlightjs2: cannot turn off CodeRay"
           end
-          setting = User.current.preference.code_theme if !Setting.plugin_redmine_highlightjs[:allow_redefine].nil?
+          setting = User.current.preference.code_theme unless Setting.plugin_redmine_highlightjs[:allow_redefine].nil? ||
+                                                              User.current.preference.nil?
           setting = Setting.plugin_redmine_highlightjs[:theme] if setting.nil? || setting.empty? || setting == CodeThemeUserSetting::DEFAULT_CODE_THEME
           setting = 'monokai_sublime' if setting.nil? || setting.empty?
           return stylesheet_link_tag("themes/#{setting}.css", :plugin => "redmine_highlightjs", :media => "screen") +
@@ -41,4 +42,3 @@ module Highlightjs
 
   end
 end
-

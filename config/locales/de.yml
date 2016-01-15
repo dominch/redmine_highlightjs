@@ -1,0 +1,8 @@
+# German strings go here for Rails i18n
+de:
+  supported_languages: Aktuell unterstützte Sprachen
+  highlighting_theme: Highlight verwendet Theme
+  try_it_link: "Teste in der Online Demo:"
+  code_theme: Highlight Code Theme
+  code_theme_title: Highlight Code Theme überschreiben
+  allow_redefine: Benutzer kann Theme überschreiben

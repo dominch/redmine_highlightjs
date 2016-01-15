@@ -1,9 +1,8 @@
-# English strings go here for Rails i18n
-en:
+# Simplified Chinese strings go here for Rails i18n
+zh:
   supported_languages: 支持语言如下：
   highlighting_theme: 主题：
   try_it_link: "试试在线主题demo:"
   code_theme: 高亮语法主题
   code_theme_title: 主题名
   allow_redefine: 允许用户重定义
-  
