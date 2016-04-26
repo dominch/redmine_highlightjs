@@ -1,9 +1,8 @@
 # English strings go here for Rails i18n
 en:
-  supported_languages: Language Markups supported in this build 
+  supported_languages: Language Markups supported in this build
   highlighting_theme: Highlight using theme
   try_it_link: "Try theme with online demo:"
   code_theme: Highlight Code Theme
-  code_theme_title: Podświetlenie bloków kodu
+  code_theme_title: Redefine Highlight Code Theme
   allow_redefine: Allow to redefine by user
-  

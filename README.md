@@ -20,7 +20,7 @@ Supported languages and markups in build: 1c accesslog actionscript apache apple
 # Install
 
 1. Follow the Redmine plugin installation steps at: http://www.redmine.org/wiki/redmine/Plugins
-1. Make sure the plugin installation directory name is <tt>redmine_highlighjs</tt>
+1. Make sure the plugin installation directory name is <tt>redmine_highlightjs</tt>
 1. Restart the server (this will ensure that the CSS file and other assets are copied to the right place)
 1. (optional) Configure color theme in Administration -> Plugins -> HighlightJS
 
